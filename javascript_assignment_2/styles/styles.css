@@ -1,0 +1,47 @@
+body{
+  background-color: #EEEEEE;  
+}
+
+.heading{
+  height: 100px;
+  padding-top: 25px;
+}
+
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding: 20px 10px 10px 20px;
+}
+
+.left {
+  left: 0;
+  width: 30%;
+  border-right: 5px solid #8a8a8a;
+}
+
+.right {
+  right: 0;
+  width: 70%;
+}
+
+.example-dropzone {
+  background-color: #6DB65B;
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.example-parent {
+  border: 2px solid #DFA612;
+  color: black;
+  display: flex;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.padding-25{
+  padding: 25px;
+}
