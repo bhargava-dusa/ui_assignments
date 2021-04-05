@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>My Page</title>
+    <link rel="icon" href="images/profile.png">
+  </head>
+  <body>
+      <div class="container heading">
+        <h1>
+            Bhargava Chandra Dusa
+            <small class="text-muted">- Full Stack Developer</small>
+        </h1>
+      </div>
+    <div class="container">
+        <ul class="nav justify-content-center nav-pills mb-4 nav-justified" id="pills-tab" role="tablist">
+            <li class="nav-item border rounded" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Home</button>
+            </li>
+            <li class="nav-item border rounded" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">About me</button>
+            </li>
+            <li class="nav-item border rounded" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact me</button>
+            </li>
+            <li class="nav-item border rounded" role="presentation">
+                <button class="nav-link" id="pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#pills-gallery" type="button" role="tab" aria-controls="pills-gallery" aria-selected="false">Gallery</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="container">
+                    <div class="accordion" id="homeAccordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="earlyLifeHeading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#earlyLife" aria-expanded="false" aria-controls="earlyLife">
+                              <h4>Early life</h4>
+                            </button>
+                          </h2>
+                          <div id="earlyLife" class="accordion-collapse collapse show" aria-labelledby="earlyLifeHeading" data-bs-parent="#homeAccordion">
+                            <div class="accordion-body">
+                                <p>Born and bought up in Tandur, a small town in Telangana. </p>
+                                <p>Schooling is done in hometown with hindi as one of the language.</p> 
+                                <p>I was good at Mathematics. Scored 100 masrks in 10th standard.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="studyHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#study" aria-expanded="false" aria-controls="study">
+                            <h4>Study</h4>
+                            </button>
+                          </h2>
+                          <div id="study" class="accordion-collapse collapse" aria-labelledby="studyHeading" data-bs-parent="#homeAccordion">
+                            <div class="accordion-body">
+                                <dl class="row">
+                                    <dt class="col-sm-3">BTech</dt>
+                                    <dd class="col-sm-9"><strong>2014</strong>, ECE, Jawaharlal Nehru Technological University, College of Engineering, Hyderabad.</dd>
+                                  
+                                    <dt class="col-sm-3">Intermediate</dt>
+                                    <dd class="col-sm-9"><strong>MPC</strong>, 2010, Sri Chaitanya Jr Collage, Hydernagar, Hyderabad.</dd>
+                                  
+                                    <dt class="col-sm-3">10th</dt>
+                                    <dd class="col-sm-9">2008, Nalanga High School, Tandur.</dd>
+                                  </dl>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="familyHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#family" aria-expanded="false" aria-controls="family">
+                            <h4>Family</h4>
+                            </button>
+                          </h2>
+                          <div id="family" class="accordion-collapse collapse" aria-labelledby="familyHeading" data-bs-parent="#homeAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-light">I'm very lucky to have such a worderful parents, Padmavathi & Ramulu.</li>
+                                    <li class="list-group-item list-group-item-light">My mother takes care of everyone in the family and makes sure everyone are in good health.</li>
+                                    <li class="list-group-item list-group-item-light">My Father is a Mathematics teacher and Headmaster of Zilla Parishad High School, that's the main reason I'm good at Math.</li>
+                                    <li class="list-group-item list-group-item-light">I'm the elder brother.</li>
+                                    <li class="list-group-item list-group-item-light">I have a younger sister, Manasa, completed her MBBS in 2021 in the time of Corona, serving many Corona patients.</li>
+                                    <li class="list-group-item list-group-item-light">And I have a younger brother too, Sharath, completed his BTech from IIT Madras in 2018 from Mechanical department, now working in AmadaSoft Chennai.</li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="container">
+                    <div class="accordion" id="profileAccordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="interestsHeader">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#interests" aria-expanded="false" aria-controls="interests">
+                              <h4>Interests</h4>
+                            </button>
+                          </h2>
+                          <div id="interests" class="accordion-collapse collapse show" aria-labelledby="interestsHeader" data-bs-parent="#profileAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-light">I enjoy long drives. After buying my 1st car, I have completed 2 road trips each of more than 2000kms.</li>
+                                    <li class="list-group-item list-group-item-light">I have interest in cooking. Tried so many new recepies during corona lockdown.</li>
+                                    <li class="list-group-item list-group-item-light">I enjoy talking to older people and know their lifestyle during their early age.</li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item open">
+                          <h2 class="accordion-header" id="careerHeader">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#career" aria-expanded="false" aria-controls="career">
+                            <h4>Career</h4>
+                            </button>
+                          </h2>
+                          <div id="career" class="accordion-collapse collapse" aria-labelledby="careerHeading" data-bs-parent="#profileAccordion">
+                            <div class="accordion-body">
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start disabled">
+                                      <div class="ms-2 me-auto">
+                                        <div class="fw-bold">HCL Technologies</div>
+                                        Software Engineer
+                                      </div>
+                                      <span class="badge bg-secondary rounded-pill">Oct 2014 - Mar 2017</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start disabled">
+                                      <div class="ms-2 me-auto">
+                                        <div class="fw-bold">BluePi Consulting Pvt Ltd</div>
+                                        Software Developer
+                                      </div>
+                                      <span class="badge bg-secondary rounded-pill">May 2017 - May 2018</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start disabled">
+                                      <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Infosys</div>
+                                        Technology Analyst
+                                      </div>
+                                      <span class="badge bg-secondary rounded-pill">Jun 2018 - Feb 2019</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start disabled">
+                                        <div class="ms-2 me-auto">
+                                          <div class="fw-bold">Abjayon Consulting Pvt Ltd</div>
+                                          Staff Consultant
+                                        </div>
+                                        <span class="badge bg-secondary rounded-pill">Mar 2019 - Jul 2019</span>
+                                      </li>
+                                      <li class="list-group-item d-flex justify-content-between align-items-start disabled">
+                                        <div class="ms-2 me-auto">
+                                          <div class="fw-bold">Knot Solutions</div>
+                                          Consultant
+                                        </div>
+                                        <span class="badge bg-secondary rounded-pill">Aug 2019 - Feb 2021</span>
+                                      </li>
+                                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                          <div class="fw-bold">Zemoso Labs</div>
+                                          Senior Software Engineer 1
+                                        </div>
+                                        <span class="badge bg-secondary rounded-pill">Mar 2021</span>
+                                      </li>
+                                  </ol>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <form class="row g-3" id="contactMeForm">
+                    <div class="col-md-4">
+                      <label for="firstName" class="form-label">Firstname</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="Firstname" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="middleName" class="form-label">Middlename</label>
+                        <input type="text" class="form-control" id="middleName" placeholder="Middlename">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="lastName" class="form-label">Lastname</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Lastname" required>
+                      </div>
+                    <div class="col-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="youremail@mail.com" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="mobile" class="form-label">Mobile</label>
+                        <input type="text" pattern="\d{10}" class="form-control" id="mobile" placeholder="Mobile" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-dark">Submit</button>
+                    </div>
+                  </form>
+            </div>
+            <div class="tab-pane fade" id="pills-gallery" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="row row-cols-5" id="imagesDisplay">
+                  <div class='col'><img src='images/image1.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image2.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image3.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image4.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image5.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image6.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image7.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image8.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image9.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image10.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image11.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image12.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image13.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image14.jpg' class='img-thumbnail' alt='image'></div>
+                  <div class='col'><img src='images/image15.jpg' class='img-thumbnail' alt='image'></div>
+                </div>                
+            </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="scripts/script.js" ></script>
+</body>
+</html>

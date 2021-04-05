@@ -1,0 +1,10 @@
+body{
+  background-color: #EEEEEE;  
+}
+.heading{
+  height: 100px;
+  padding-top: 25px;
+}
+.card:hover{
+  cursor: pointer;
+}

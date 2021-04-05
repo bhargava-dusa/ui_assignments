@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="logo.png">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Bhargava Chandra Dusa</h1>
+        </div>
+        <div class="tabs">
+            <div class="tab" onclick="openTab('home')" id="homeTab" style="background-color:#537e5e">Home</div>
+            <div class="tab" onclick="openTab('aboutMe')" id="aboutMeTab">About me</div>
+            <div class="tab" onclick="openTab('contactMe')" id="contactMeTab">Contact me</div>
+            <div class="tab" onclick="openTab('gallery')" id="galleryTab">Gallery</div>
+        </div>
+        <div class="content-root">
+            <div id="home" class="content" style="display: block;">
+                <h2>Bhargava Chandra Dusa</h2>
+                <h4>Address</h4>
+                <p>H.No. 2-2-87/6, Saipur, Tandur, <br>Vikarabad Dist, Telangana, India - 501141</p>
+            </div>
+            <div id="aboutMe" class="content" style="display: none;">
+                <h2>About Me</h2>
+                <h4>Personal</h4>
+                <table>
+                    <tr>
+                        <td>Dob: </td>
+                        <td>02-Jul-1993</td>
+                    </tr>
+                    <tr>
+                        <td>Gender: </td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Married: </td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+                <hr>    
+                <h4>Professional</h4>
+                <table>
+                    <tr>
+                        <td>Profession: </td>
+                        <td>Software Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Copany: </td>
+                        <td>Zemoso</td>
+                    </tr>
+                    <tr>
+                        <td>Total Experience: </td>
+                        <td>6 years</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="contactMe" class="content" style="display: none;">
+                <h2>Contact me</h2>
+                <form id="contactMeForm" class="contactMeForm">
+                    <table>
+                        <tr>
+                            <td><label for="firstName">Firstname: </label></td>
+                            <td><input type="text" name="firstName" id="firstName"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastName">Lastname: </label></td>
+                            <td><input type="text" name="lastName" id="lastName"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mobile">Mobile: </label></td>
+                            <td><input type="number" name="mobile" id="mobile"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email: </label></td>
+                            <td><input type="email" name="email" id="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message: </label></td>
+                            <td><textarea id="message"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit" id="contactMeSubmit" onclick="showAlert()">Submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="gallery" class="content" style="display: none;">
+                <h2>Gallery</h2>
+                <img src="picture1.png" width="200px" height="200px">
+                <img src="picture1.png" width="200px" height="200px">
+                <img src="picture1.png" width="200px" height="200px">
+                <img src="picture1.png" width="200px" height="200px">
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function openTab(tabId) {
+          var i;
+          var x = document.getElementsByClassName("content");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          var y = document.getElementsByClassName("tab");
+          for (i = 0; i < y.length; i++) {
+            y[i].style.backgroundColor = "#73878a"; 
+          }
+          document.getElementById(tabId).style.display = "block";
+          document.getElementById(tabId+"Tab").style.backgroundColor = "#537e5e";  
+        }
+        function showAlert(){
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var mobile = document.getElementById('mobile').value;
+            var email = document.getElementById('email').value;
+            alert("Hello " + firstName + " " + lastName + ". You contacted me.");
+            form.reset();
+        }
+    </script>
+</html>
