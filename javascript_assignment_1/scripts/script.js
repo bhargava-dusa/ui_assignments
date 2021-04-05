@@ -12,7 +12,7 @@ let imagesData;
 }*/
 
 async function loadData(){
-    let url = 'https://my-json-server.typicode.com/bhargava-dusa/json/images';
+    let url = 'https://my-json-server.typicode.com/bhargava-dusa/ui_assignments/images';
     let response = await fetch(url);
     imagesData = await response.json();
 }
